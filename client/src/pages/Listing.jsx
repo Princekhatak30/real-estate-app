@@ -122,7 +122,7 @@ export default function Listing() {
 ) : (
   // Log information for debugging
   <p>
-    Debug: Regular Price - {listing.regularPrice}, Discounted Price - {listing.discountedPrice}
+     Regular Price - {listing.regularPrice}
   </p>
 )}
 
