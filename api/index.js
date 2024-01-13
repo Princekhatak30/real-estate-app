@@ -7,9 +7,6 @@ const listingRouter = require('./routes/listing.route')
 const path = require ('path')
 const app = express()
 
-
-
-
 app.use(express.json())
 app.use(cookieParser())
 const port = 3000
@@ -17,12 +14,7 @@ const port = 3000
 app.use(userRouter)
 app.use(authRouter)
 app.use(listingRouter)
- 
-// app.use(express.static(path.join(__dirname, '/client/dist')))
 
-// app.get('*', (req,res)=>{
-//    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
-// })
 
 app.listen(port , () => {
    console.log( `Server is running  on port ${port}`);
