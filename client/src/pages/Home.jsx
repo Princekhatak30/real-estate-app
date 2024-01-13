@@ -99,11 +99,11 @@ export default function Home() {
               <Link className='text-sm text-blue-800 hover:underline' to={'/search?offer=true'}>
                 Show more offers
               </Link>
+                </div>
               <div className="flex  gap-4 flex-wrap">
               {offerListings.map((listing) => (
-                <ListingItem listing={listing} key={listing._id} />
+                <ListingItem listing={listing} key={listing.listingId} />
               ))}
-              </div>
             </div>
           </div>
         )}
@@ -114,11 +114,11 @@ export default function Home() {
               <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=rent'}>
                 Show more places for rent
               </Link>
+                </div>
               <div className="flex  gap-4 flex-wrap">
               {rentListings.map((listing) => (
-                <ListingItem listing={listing} key={listing._id} />
+                <ListingItem listing={listing} key={listing.listingId} />
               ))}
-              </div>
             </div>
           </div>
         )}
@@ -129,16 +129,15 @@ export default function Home() {
               <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=sale'}>
                 Show more places for Sale
               </Link>
+                </div>
               <div className="flex  gap-4 flex-wrap">
               {saleListings.map((listing) => (
-                <ListingItem listing={listing} key={listing._id} />
+                <ListingItem listing={listing} key={listing.listingId} />
               ))}
-              </div>
             </div>
           </div>
         )}
       </div>
-
     </div>
   )
 }
