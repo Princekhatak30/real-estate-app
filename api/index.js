@@ -6,7 +6,7 @@ const authRouter = require("./routes/auth.route")
 const listingRouter = require('./routes/listing.route')
 const path = require ('path')
 const app = express()
-const path = require('path')
+
 
 const __dirname = path.resolve()
 
